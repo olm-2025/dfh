@@ -6,6 +6,7 @@
 }
 
 h1,h2{
+    cursor:pointer;
     margin: 0;
 }
 
@@ -30,12 +31,12 @@ h2{
 }
 
 .rowbox{
-    width:100%;
-    margin-top:6vw;
+    width: 100%;
+    margin-top: 6vw;
 }
 
 .row{
-    margin-top:2vw;
+    margin-top: 2vw;
 }
 
 .row.first{
@@ -43,4 +44,18 @@ h2{
     font-size: 4vw;
     font-weight: bold;
     margin-top: 0;
+}
+
+.rowbox.navi{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rowbox.navi .row *:not(.active){
+    color: grey;
+    font-weight:normal;
+}
+
+span.pipe{
+    margin:0 1vw;
 }

@@ -6,24 +6,31 @@
     <link rel="stylesheet" href="/dfh.css">
 </head>
 <body class="body center">
-<div class="rowbox first">
+<div class="rowbox hd first">
     <div class="row"><h1>Die Freien Heidelberger</h1></div>
     <div class="row"><h2>Friedensfähig statt kriegstüchtig werden!</h2></div>
 </div>
-<div class="rowbox">
-    <div class="row"><a href="/downloads">Hier geht es zu den Dokumenten zum Herunterladen...</a></div>
-    <div class="row"></div>
-    <div class="row"></div>
+<div class="rowbox navi">
+    <div class="row first">
+        <a class="start" data-navi-val="start" href="/">Start</a>
+        <span class="pipe">|</span>
+        <a class="downloads" data-navi-val="downloads" href="/downloads">Dokumente</a>
+        <span class="pipe">|</span>
+        <a class="kontakt" data-navi-val="kontakt" href="/kontakt">Kontakt</a>
+    </div>
 </div>
 
-<div class="rowbox">
-    <div class="row first">Kontakt zu uns</div>
-    <div class="row"><a href="mailto:kontakt@diefreienheidelberger.de">kontakt@diefreienheidelberger.de</a></div>
-    <div class="row"><a href="https://t.me/diefreienheidelberger">https://t.me/diefreienheidelberger</a>&nbsp;(Telegram)</div>
+<div class="rowbox start">
+    <div class="row first">Startseite. Ist noch zu füllen...</div>
 </div>
 
-<div class="rowbox">
-    <div class="row first">Impressum</div>
-    <div class="row">M. Mronga, 69221 Dossenheim</div>
-</div>
+<script src="/cDfh.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){cDfh.init({
+    page: {
+        fileSlug: "start",
+    },
+});});
+</script>
 </body>
