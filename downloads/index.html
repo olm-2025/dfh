@@ -6,13 +6,21 @@
     <link rel="stylesheet" href="/dfh.css">
 </head>
 <body class="body center">
-<div class="rowbox first">
+<div class="rowbox hd first">
     <div class="row"><h1>Die Freien Heidelberger</h1></div>
     <div class="row"><h2>Friedensfähig statt kriegstüchtig werden!</h2></div>
 </div>
+<div class="rowbox navi">
+    <div class="row first">
+        <a class="start" data-navi-val="start" href="/">Start</a>
+        <span class="pipe">|</span>
+        <a class="downloads" data-navi-val="downloads" href="/downloads">Dokumente</a>
+        <span class="pipe">|</span>
+        <a class="kontakt" data-navi-val="kontakt" href="/kontakt">Kontakt</a>
+    </div>
+</div>
 
-
-<div class="rowbox">
+<div class="rowbox dnl">
     <div class="row first">Dokumente zum Herunterladen</div>
     <div class="row"><a href="/Dokumente/Acht amtliche Fakten DinA1 Plakat.zip">Acht amtliche Fakten DinA1 Plakat.zip</a></div>
     <div class="row"><a href="/Dokumente/Einschraenkungen.pdf">Einschraenkungen.pdf</a></div>
@@ -20,4 +28,13 @@
     <div class="row"><a href="/Dokumente/Zitate.pdf">Zitate.pdf</a></div>
 </div>
 
+<script src="/cDfh.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){cDfh.init({
+    page: {
+        fileSlug: "downloads",
+    },
+});});
+</script>
 </body>
