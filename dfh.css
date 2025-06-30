@@ -1,6 +1,5 @@
 .body{
     font-family: system-ui, -apple-system, sans-serif;
-    /*font-family: "Helvetica Neue", Arial, sans-serif;*/
     font-size: 3vw;
     margin:4vw 0;
 }
@@ -20,6 +19,11 @@ h2{
     font-size: 4.5vw;
 }
 
+span.pipe{
+    margin:0 1vw;
+    xtext-decoration: none;
+}
+
 .center, .rowbox{
     display: flex;
     flex-direction: column;
@@ -31,8 +35,8 @@ h2{
 }
 
 .rowbox{
-    width: 100%;
     margin-top: 6vw;
+    width: 100%;
 }
 
 .row{
@@ -51,11 +55,40 @@ h2{
     justify-content: center;
 }
 
-.rowbox.navi .row *:not(.active){
-    color: grey;
+.rowbox.navi .row *{
+    color: black;
     font-weight:normal;
 }
 
-span.pipe{
-    margin:0 1vw;
+.rowbox.navi .row a{
+    text-decoration: underline;
 }
+
+.rowbox.navi .row a.active{
+    color: indigo;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+.rowbox.start{
+    font-size: 2.75vw;
+}
+
+.rowbox.start .row{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 13vw);
+}
+
+.rowbox.start .row .row1{
+    font-weight:bold;
+}
+
+.rowbox.start .row .row2{
+    hyphens: auto;
+    margin-top: 2vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+

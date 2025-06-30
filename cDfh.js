@@ -2,7 +2,7 @@ class cDfh{
 
     static init(oIn){
 
-        if(0)console.log([
+        if(1)console.log([
             "init...",
             //oIn,
             //oIn.page,
