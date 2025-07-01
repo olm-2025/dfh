@@ -1,54 +1,46 @@
+html{
+    font-size:100%;
+}
+
 body{
     align-items: center;
     font-family: system-ui, -apple-system, sans-serif;
-    font-size: 3vw;
-    margin: 4vw 0;
-}
-
-h1,h2{
-    cursor:pointer;
-    margin: 0;
 }
 
 h1{
     color:blue;
-    font-size: 7.75vw;
-}
-
-h2{
-    color:darkgreen;
-    font-size: 4.5vw;
-}
-
-span.pipe{
-    margin:0 1vw;
+    font-size: 5.1rem;
 }
 
 .rowbox{
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    margin-left: 1.5rem;
+    margin-top: 2.0rem;
+    width: calc(100% - 3.0rem);
 }
 
-.rowbox.first{
-    margin-top: 0;
-}
-
-.rowbox{
-    margin-top: 6vw;
-    margin-left: 6vw;
-    width: calc(100% - 12vw);
+.rowbox:not(.hd){
+    font-size: 1.5rem;
 }
 
 .row{
-    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    margin-top:0.5rem;
 }
 
 .row.first{
     color:saddlebrown;
-    font-size: 4vw;
+    font-size: 2.0rem;
     font-weight: bold;
-    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.rowbox.hd{
+    align-items: center;
+    flex-direction: column;
 }
 
 .rowbox.navi{
@@ -67,12 +59,9 @@ span.pipe{
 
 .rowbox.navi .row a.active{
     color: indigo;
+    cursor: default;
     font-weight:bold;
     text-decoration: none;
-}
-
-.rowbox.start{
-    font-size: 2.75vw;
 }
 
 .rowbox.start .row{
@@ -81,17 +70,31 @@ span.pipe{
 }
 
 .rowbox.start .row .row1{
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .rowbox.start .row .row2{
     hyphens: auto;
-    margin-top: 2vw;
+    margin-top: 1.0rem;
     text-align: justify;
     text-justify: inter-word;
 }
 
 .rowbox.kontakt .row .lbl{
-    width: 16vw;
+    width: 9.0rem;
     display: inline-block;
+}
+
+h1,h2{
+    cursor:pointer;
+    margin: 0;
+}
+
+h2{
+    color:darkgreen;
+    font-size: 2.9em;
+}
+
+span.pipe{
+    margin: 0 1.0rem;
 }

@@ -1,9 +1,17 @@
 class cDfh{
 
     static init(oIn){
-        //console.log(["init...",oIn.page.fileSlug]);
-        $(".rowbox.hd").off().on("click",() => { this.hdlHdClick(); });
-        $(`.rowbox.navi a[data-navi-val="${oIn.page.fileSlug}"]`).addClass("active");
+        const sPage = oIn.page.fileSlug;
+        //console.log(["init...",sPage]);
+        $(".rowbox.navi a").off().on("click",(oEvt) => {
+            //console.log(["navi a clicked...",sPage]);
+            if($(oEvt.target).hasClass("active"))  { oEvt.preventDefault(); }
+        });
+        $(".rowbox.hd").off().on("click",() => {
+            //console.log(["hd clicked...",sPage]);
+            this.hdlHdClick();
+        });
+        $(`.rowbox.navi a[data-navi-val="${sPage}"]`).addClass("active");
     }
 
     static hdlHdClick()  { location.href = '/?timestamp=123456'; }
