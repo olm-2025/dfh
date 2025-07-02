@@ -1,0 +1,27 @@
+.rowbox.navi{
+    align-items:flxe-start;
+    flex-direction: row;
+    height: 7.0rem;
+    justify-content: space-between;
+    margin-top: 3.0rem;
+}
+
+.rowbox.navi .col.logo img{
+    margin-top: 0.5rem;
+}
+
+.rowbox.navi .row *{
+    color: black;
+    font-weight:normal;
+}
+
+.rowbox.navi .row a{
+    text-decoration: underline;
+}
+
+.rowbox.navi .row a.active{
+    color: indigo;
+    cursor: default;
+    font-weight:bold;
+    text-decoration: none;
+}
