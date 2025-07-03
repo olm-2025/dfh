@@ -10,7 +10,7 @@ body{
     margin: 1.0rem 0;
 }
 
-h1, h2, img.logo{
+h1, h2, .logo .img{
     cursor:pointer;
     margin: 0;
 }

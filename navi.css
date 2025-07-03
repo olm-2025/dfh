@@ -1,17 +1,17 @@
 .rowbox.navi{
-    align-items:flxe-start;
     flex-direction: row;
     height: 7.0rem;
     justify-content: space-between;
     margin-top: 3.0rem;
 }
 
-.rowbox.navi .col.logo img{
-    margin-top: 0.5rem;
+.rowbox.navi .logo .img{
+    margin-top: 0.4rem;
 }
 
 .rowbox.navi .row *{
     color: black;
+    font-size: 1.6rem;
     font-weight:normal;
 }
 
